@@ -1,6 +1,7 @@
 import Header from "../../Common/Header/Header"
 import Footer from "../../Common/Footer/Footer";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -12,9 +13,9 @@ const Home = () => {
 
         return (
             <div className="section1 row justify-content-center">
-                <div className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img1})` }}>
+                <Link to={'/makeup'} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img1})` }}>
                     <button className="btnCard ">Maquillaje</button>
-                </div>
+                </Link>
                 <div className="col-10 col-sm-5  col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img2})` }}>
                     <button className="btnCard ">Uñas</button>
                 </div>
@@ -85,20 +86,22 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div className="home">
-                <div className="row justify-content-center title"> MAREZ</div>
-                <div className="row justify-content-center sub-title">
-                    <hr className="col-10 col-sm-3 col-md-2 col-lg-2" style={{ border: "1px solid", margin: "0", color: "white" }} />
-                    <div className="col-12 col-sm-2 col-md-3">
-                        BLOG DE MAQUILLAJE
+            <div style={{display:"flex"}}>
+                <div className="home" style={{ zIndex: "1" }}>
+                    <div className="row justify-content-center title"> MAREZ</div>
+                    <div className="row justify-content-center sub-title">
+                        <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
+                        <div className="col-12 col-sm-5 col-md-4 col-lg-3">
+                            BLOG DE MAQUILLAJE
+                        </div>
+                        <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
                     </div>
-                    <hr className="col-10 col-sm-3 col-md-2 col-lg-2" style={{ border: "1px solid", margin: "0", color: "white" }} />
-                </div>
 
-                {section1()}
-                {section2()}
-                {section3()}
-                {section4()}
+                    {section1()}
+                    {section2()}
+                    {section3()}
+                    {section4()}
+                </div>
             </div>
             <Footer />
 
