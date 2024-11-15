@@ -97,7 +97,7 @@ const Home = () => {
                     <div className="row justify-content-center sub-title">
                         <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
                         <div className="col-12 col-sm-5 col-md-4 col-lg-3">
-                            BLOG DE MAQUILLAJE
+                            MAKE UP - NAILS - HAIR
                         </div>
                         <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
                     </div>
