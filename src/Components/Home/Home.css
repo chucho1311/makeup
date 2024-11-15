@@ -35,7 +35,8 @@
 .section3 {
     margin: 0px;
     padding: 50px 10px;
-    color: rgb(68, 148, 68);
+    /* color: rgb(68, 148, 68); */
+    color: rgb(90, 6, 90);
     background-color: rgb(248, 202, 210);
     align-items: center;
     text-align: center;
@@ -65,7 +66,8 @@
     font-weight: 800px;
     font-size: 20px;
     background-color: pink;
-    color: rgb(211, 179, 19);
+    /* color: rgb(211, 179, 19); */
+    color: rgb(167, 11, 167);
 }
 
 .topicCard {

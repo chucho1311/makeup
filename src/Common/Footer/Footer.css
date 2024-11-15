@@ -14,11 +14,13 @@
     font-weight: 800px;
     font-size: 20px;
     background-color: pink;
-    color: rgb(68, 148, 68);
+    color: rgb(167, 11, 167);
 }
 
 .inputFooter{
     height: 4vh;
+    background-color: white;
+    border-color: rgb(68, 148, 68);
 }
 
 .iconFooter {

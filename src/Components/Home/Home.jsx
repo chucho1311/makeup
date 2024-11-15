@@ -3,23 +3,27 @@ import Footer from "../../Common/Footer/Footer";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
+import mainMKP from "../../Common/Images/mainMakeup.jpg"
+import mainUñas from "../../Common/Images/mainUñas.jpg"
+import mainCabello from "../../Common/Images/mainCabello.jpg"
+import carouselImg1 from "../../Common/Images/carousel1.jpg";
+import carouselImg2 from "../../Common/Images/carousel2.jpg";
+
 const Home = () => {
 
     const section1 = () => {
 
-        const img1 = "https://cyzone.cyzone.com/wp-content/uploads/2021/11/Thumb_Reel_HaloEyesPink_Nicolle.jpg";
-        const img2 = "https://m.media-amazon.com/images/I/61yHh3MEe2L.jpg";
         const img3 = "https://media.glamour.es/photos/616fa589157db8f8091d5927/master/w_1600%2Cc_limit/584537.jpg";
 
         return (
             <div className="section1 row justify-content-center">
-                <Link to={'/makeup'} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img1})` }}>
+                <Link to={'/makeup'} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainMKP})` }}>
                     <button className="btnCard ">Maquillaje</button>
                 </Link>
-                <div className="col-10 col-sm-5  col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img2})` }}>
+                <div className="col-10 col-sm-5  col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainUñas})` }}>
                     <button className="btnCard ">Uñas</button>
                 </div>
-                <div className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${img3})` }}>
+                <div className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainCabello})` }}>
                     <button className="btnCard ">Cabello</button>
                 </div>
             </div>
@@ -66,17 +70,18 @@ const Home = () => {
                         En este espacio puedes contar tu historia y permitir que los usuarios sepan más sobre ti.
                     </p>
                 </div>
-                <button className="btnCard" style={{ backgroundColor: "rgb(65, 95, 67)" }}>Leer Más</button>
+                <button className="btnCard">Leer Más</button>
             </div>
 
         )
     }
 
     const section4 = () => {
+
         return (
             <div className="section4 row justify-content-center">
-                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://tiendaellas.com/cdn/shop/articles/Blog_ojos_basico_600x600_crop_center.png?v=1636664444" alt="sect4" />
-                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://blog.cromantic.com/hs-fs/hubfs/7-maquillajes-aesthetic-para-ir-a-la-oficina-6-e1647048606252.jpg?width=500&name=7-maquillajes-aesthetic-para-ir-a-la-oficina-6-e1647048606252.jpg" alt="sect4" />
+                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src={carouselImg1} alt="sect4" />
+                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src={carouselImg2} alt="sect4" />
                 <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://media.glamour.mx/photos/6716bc5ee861ba7ef445abd4/master/w_1600%2Cc_limit/maquillaje-beetlejuice-glam-4.jpg" alt="sect4" />
                 <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://institutorobertopiazza.com.ar/wp-content/uploads/2020/10/maquillaje-para-halloween-1.jpg" alt="sect4" />
             </div>

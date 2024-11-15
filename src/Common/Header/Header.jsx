@@ -7,13 +7,13 @@ const Header = () => {
         <div className='header row'>
             <div className='squeare1 col-8 col-sm-10 col-md-10 col-lg-10'>
                 <Link to={'/'} className='headerBtn'>
-                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=1A1A1A' alt='casa' />
+                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=FFFFFF' alt='casa' />
                 </Link>
                 <Link className='headerBtn'>
-                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=EMfHtOm6xPEe&format=png&color=1A1A1A' alt='blog' />
+                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=EMfHtOm6xPEe&format=png&color=FFFFFF' alt='blog' />
                 </Link>
                 <Link className='headerBtn'>
-                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=15263&format=png&color=1A1A1A' alt='blog' />
+                    <img className='imgIcon' src='https://img.icons8.com/?size=100&id=15263&format=png&color=FFFFFF' alt='blog' />
                 </Link>
                 {/* <button className='headerBtn'>
                     Contacto
