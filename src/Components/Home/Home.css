@@ -1,23 +1,24 @@
 .home {
-    margin-top: -30px;
+    /* margin-top: -30px; */
     text-align: center;
 }
 
-.title {
-    color: white;
-    /*rgb(247, 197, 205)*/
-    font-weight: 800;
-    font-size: 50px;
-    margin: 0;
+.portada {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    color: black;
+    background-color: white;
 }
 
-.sub-title {
-    color: white;
-    /*rgb(247, 197, 205)*/
-    font-weight: 300;
-    font-size: 20px;
-    align-items: center;
-    margin: 0;
+.portadaText {
+    margin: 5%;
+    text-align: left;
+}
+
+.portada img {
+    margin: 5% 0px;
+    border-radius: 50px;
 }
 
 .section1 {
@@ -42,7 +43,7 @@
     text-align: center;
 }
 
-.section4{
+.section4 {
     margin: 0px;
 }
 
@@ -57,7 +58,6 @@
     color: rgb(255, 255, 255);
     background-size: cover;
     background-position: center;
-    transition: 0.3s ease;
 }
 
 .btnCard {
@@ -89,7 +89,7 @@
 
 .topicCard:hover {
     height: 42vh;
-    width: 30vw;
+    width: 35vw;
 }
 
 @media (width <=768px) {
@@ -110,7 +110,7 @@
 
 }
 
-.imgSection4{
+.imgSection4 {
     height: 40vh;
     margin: 0px;
     padding: 0px;

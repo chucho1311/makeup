@@ -3,13 +3,31 @@ import Footer from "../../Common/Footer/Footer";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
+import owner from "../../Common/Images/owner.jpg"
 import mainMKP from "../../Common/Images/mainMakeup.jpg"
 import mainUñas from "../../Common/Images/mainUñas.jpg"
 import mainCabello from "../../Common/Images/mainCabello.jpg"
-import carouselImg1 from "../../Common/Images/carousel1.jpg";
+import artistic from "../../Common/Images/carousel1.jpg";
 import carouselImg2 from "../../Common/Images/carousel2.jpg";
+import quinciañeras from "../../Common/Images/animetionPhotos3.jpg"
 
 const Home = () => {
+
+    const portada = () => {
+        return (
+            <div className="portada row justify-content-center">
+                <img className="col-11 col-sm-10 col-md-5" src={owner} alt="portada" />
+                <div className="portadaText col-11 col-sm-10 col-md-5">
+                    <h2>Jennifer</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </div>
+        )
+    }
 
     const section1 = () => {
 
@@ -17,9 +35,9 @@ const Home = () => {
 
         return (
             <div className="section1 row justify-content-center">
-                <Link to={'/makeup'} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainMKP})` }}>
+                <a href="#makeup" className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent " style={{ backgroundImage: `url(${mainMKP})` }}>
                     <button className="btnCard ">Maquillaje</button>
-                </Link>
+                </a>
                 <div className="col-10 col-sm-5  col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainUñas})` }}>
                     <button className="btnCard ">Uñas</button>
                 </div>
@@ -35,9 +53,13 @@ const Home = () => {
         const img1 = 'https://media.revistavanityfair.es/photos/60e82dd09bf55ca1055aac1e/master/w_1600%2Cc_limit/240734.jpg';
 
         return (
-            <div className="section2 row justify-content-center" >
-                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${img1})` }}>
-                    <p>CONOCE TUS BROCHAS</p>
+            <div className="section2 row justify-content-center" id="makeup" >
+                <Link to="/makeupArtistic" className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${artistic})` }}>
+                    <p>ARTISTICO</p>
+                    <hr />
+                </Link>
+                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${quinciañeras})` }}>
+                    <p>Quinciañeras</p>
                     <hr />
                 </div>
                 <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${img1})` }}>
@@ -48,13 +70,9 @@ const Home = () => {
                     <p>CONOCE TUS BROCHAS</p>
                     <hr />
                 </div>
-                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${img1})` }}>
-                    <p>CONOCE TUS BROCHAS</p>
-                    <hr />
-                </div>
-                <div className="row justify-content-center">
+                {/* <div className="row justify-content-center">
                     <button className="btnCard col-1">Everything</button>
-                </div>
+                </div> */}
             </div>
         );
     }
@@ -80,7 +98,7 @@ const Home = () => {
 
         return (
             <div className="section4 row justify-content-center">
-                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src={carouselImg1} alt="sect4" />
+                <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src={artistic} alt="sect4" />
                 <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src={carouselImg2} alt="sect4" />
                 <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://media.glamour.mx/photos/6716bc5ee861ba7ef445abd4/master/w_1600%2Cc_limit/maquillaje-beetlejuice-glam-4.jpg" alt="sect4" />
                 <img className="col-sm-6 col-md-6 col-lg-3 imgSection4" src="https://institutorobertopiazza.com.ar/wp-content/uploads/2020/10/maquillaje-para-halloween-1.jpg" alt="sect4" />
@@ -91,18 +109,10 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div style={{display:"flex"}}>
-                <div className="home" style={{ zIndex: "1" }}>
-                    <div className="row justify-content-center title"> MAREZ</div>
-                    <div className="row justify-content-center sub-title">
-                        <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
-                        <div className="col-12 col-sm-5 col-md-4 col-lg-3">
-                            MAKE UP - NAILS - HAIR
-                        </div>
-                        <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "white" }} />
-                    </div>
-
+            <div style={{ display: "flex" }}>
+                <div className="home" style={{ zIndex: "1" }}> 
                     {section1()}
+                    {portada()}
                     {section2()}
                     {section3()}
                     {section4()}

@@ -1,17 +1,46 @@
 .header {
   display: flex;
   min-height: 6em;
-  max-height: 9em;
+  /* max-height: 9em; */
   padding: 25px 10px;
   gap: 30px;
   margin: 0;
   backdrop-filter: blur(3px);
 }
 
+.titleContainer{
+  /* margin-top: -5vh; */
+}
+
+.title {
+  color: black;
+  /*rgb(247, 197, 205)*/
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0;
+}
+
+.sub-title {
+  color: black;
+  /*rgb(247, 197, 205)*/
+  font-weight: 300;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
 
 .squeare1 {
   display: flex;
+  z-index: 2;
   gap: 8px;
+  justify-content:end;
+}
+
+@media (width < 768px) {
+  .squeare1{
+    justify-content: center;
+  }
 }
 
 .squeare2 {
