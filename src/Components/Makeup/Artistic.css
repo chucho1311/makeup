@@ -1,5 +1,4 @@
-
-.Artistic{
+.Artistic {
     margin: 0px;
     padding: 20px 0px;
     /* padding: 10px 50px; */
@@ -8,11 +7,11 @@
     background-color: whitesmoke;
 }
 
-.artisticContainer{
+.artisticContainer {
     margin: 0px;
 }
 
-.imgContiainer{
+.imgContiainer {
     display: flex;
     margin: 10px;
     padding: 10px;
@@ -21,23 +20,23 @@
     place-content: center;
 }
 
-.img{
+.img {
     max-width: 100%;
     border-radius: 0px 0px 50% 50%;
 }
 
-.descriptionContainer{
+.descriptionContainer {
     display: grid;
     margin: 10px;
     place-content: center;
     color: black;
 }
 
-.serviceContainer{
+.serviceContainer {
     text-align: center;
 }
 
-.servicesCard{
+.servicesCard {
     display: grid;
     gap: 10px;
     margin: 10px;
@@ -45,11 +44,29 @@
     place-items: center;
 }
 
-.servicesImg{
+.servicesImg {
     border-radius: 40% 0px;
     margin: 10px;
     width: 100%;
     height: 30vh;
     /* min-height: 30vh; */
     /* max-height: 45vh; */
+}
+
+.artistic {
+    display: flex;
+    place-content: center;
+    text-align: center;
+    padding: 3%;
+    gap: 20px 0px;
+
+    color: white;
+    background-color: black;
+    background-size: contain;
+}
+
+.artistic img {
+    margin: 3%;
+    padding: 0;
+    box-shadow: 10px 5px 80px rgb(70, 33, 54);
 }
