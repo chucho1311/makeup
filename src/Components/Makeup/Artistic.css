@@ -61,12 +61,12 @@
     gap: 20px 0px;
 
     color: white;
-    background-color: black;
+    background-color: rgb(61, 48, 48);
     background-size: contain;
 }
 
 .artistic img {
     margin: 3%;
     padding: 0;
-    box-shadow: 10px 5px 80px rgb(70, 33, 54);
+    box-shadow: 10px 5px 80px rgb(102, 38, 74);
 }

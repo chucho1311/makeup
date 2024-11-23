@@ -6,7 +6,6 @@
 .portada {
     display: flex;
     align-items: center;
-    margin-top: 5%;
     color: black;
     background-color: white;
 }
@@ -23,7 +22,7 @@
 
 .section1 {
     display: flex;
-    margin: 100px 0px 100px 0px;
+    margin: 5% 0px 100px 0px;
 }
 
 .section2 {

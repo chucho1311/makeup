@@ -10,6 +10,7 @@ import mainCabello from "../../Common/Images/mainCabello.jpg"
 import artistic from "../../Common/Images/carousel1.jpg";
 import carouselImg2 from "../../Common/Images/carousel2.jpg";
 import quinciañeras from "../../Common/Images/animetionPhotos3.jpg"
+import Carousel from "../../Common/Carousel/Carousel";
 
 const Home = () => {
 
@@ -112,10 +113,11 @@ const Home = () => {
             <div style={{ display: "flex" }}>
                 <div className="home" style={{ zIndex: "1" }}> 
                     {section1()}
-                    {portada()}
                     {section2()}
-                    {section3()}
+                    {portada()}
+
                     {section4()}
+                    {/* <Carousel/> */}
                 </div>
             </div>
             <Footer />

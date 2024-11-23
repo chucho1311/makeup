@@ -8,6 +8,7 @@ import artistic1 from "../../Common/Images/artistic1.jpg"
 import artistic2 from "../../Common/Images/artistic2.jpg"
 import artistic3 from "../../Common/Images/artistic3.jpg"
 import artistic4 from "../../Common/Images/artistic4.jpg"
+import Carousel from "../../Common/Carousel/Carousel";
 
 const Makeup = () => {
 
@@ -34,8 +35,7 @@ const Makeup = () => {
     return (
         <>
             <Header />
-            <div className="artistic row">
-                {/* <div className="Artistic col-11">
+            {/* <div className="Artistic col-11">
                     <div className="artisticContainer row justify-content-center">
                         <div className="imgContiainer col-12 col-sm-5">
                             <img className="img" src={mainImg} alt="mainIMage" />
@@ -65,15 +65,16 @@ const Makeup = () => {
                         })}
                     </div>
                 </div> */}
-
+            <div className="artistic row">
                 <h2 className="col-12">Maquillaje artistico</h2>
-                <img className="col-11 col-sm-8 col-md-5 col-lg-4" src={artistic1} alt="artistic"/>
-                <img className="col-11 col-sm-8 col-md-5 col-lg-4" src={artistic2} alt="artistic"/>
-                <img className="col-11 col-sm-8 col-md-5 col-lg-4" src={artistic3} alt="artistic"/>
-                <img className="col-11 col-sm-8 col-md-5 col-lg-4" src={artistic4} alt="artistic"/>
+                <img className="col-11 col-sm-8 col-md-5 col-lg-3" src={artistic1} alt="artistic"/>
+                <img className="col-11 col-sm-8 col-md-5 col-lg-3" src={artistic2} alt="artistic"/>
+                <img className="col-11 col-sm-8 col-md-5 col-lg-3" src={artistic3} alt="artistic"/>
+                <img className="col-11 col-sm-8 col-md-5 col-lg-3" src={artistic4} alt="artistic"/>
 
             </div>
-            <Footer/>
+            <Carousel slide1={artistic1} slide2={artistic2} slide3={artistic3}/>
+            <Footer />
         </>
     )
 }
