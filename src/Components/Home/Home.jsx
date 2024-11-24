@@ -10,9 +10,10 @@ import mainCabello from "../../Common/Images/mainCabello.jpg"
 import artistic from "../../Common/Images/carousel1.jpg";
 import carouselImg2 from "../../Common/Images/carousel2.jpg";
 import quinciañeras from "../../Common/Images/animetionPhotos3.jpg"
-import Carousel from "../../Common/Carousel/Carousel";
+import social from "../../Common/Images/social.jpg"
 
 const Home = () => {
+    scroll(top)
 
     const portada = () => {
         return (
@@ -32,19 +33,33 @@ const Home = () => {
 
     const section1 = () => {
 
-        const img3 = "https://media.glamour.es/photos/616fa589157db8f8091d5927/master/w_1600%2Cc_limit/584537.jpg";
+        const topics = [
+            {
+                title: "Maquillaje",
+                image: mainMKP,
+                "href": "#makeup"
+            },
+            {
+                title: "Uñas",
+                image: mainUñas,
+                "href": "#uñas"
+            },
+            {
+                title: "Cabello",
+                image: mainCabello,
+                "href": "#cabello"
+            },
+        ]
 
         return (
             <div className="section1 row justify-content-center">
-                <a href="#makeup" className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent " style={{ backgroundImage: `url(${mainMKP})` }}>
-                    <button className="btnCard ">Maquillaje</button>
-                </a>
-                <div className="col-10 col-sm-5  col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainUñas})` }}>
-                    <button className="btnCard ">Uñas</button>
-                </div>
-                <div className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent" style={{ backgroundImage: `url(${mainCabello})` }}>
-                    <button className="btnCard ">Cabello</button>
-                </div>
+                {topics.map((item, index) => {
+                    return (
+                        <a href={item.href} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent " style={{ backgroundImage: `url(${item.image})` }} key={index}>
+                            <button className="btnCard ">{item.title}</button>
+                        </a>
+                    )
+                })}
             </div>
         )
     }
@@ -52,28 +67,39 @@ const Home = () => {
     const section2 = () => {
 
         const img1 = 'https://media.revistavanityfair.es/photos/60e82dd09bf55ca1055aac1e/master/w_1600%2Cc_limit/240734.jpg';
+        const subTopics = [
+            {
+                title: "Artistico",
+                image: artistic,
+                link: "/makeupArtistic"
+            },
+            {
+                title: "Quinciañeras",
+                image: quinciañeras,
+                link: ""
+            },
+            {
+                title: "Novias",
+                image: img1,
+                link: ""
+            },
+            {
+                title: "Social",
+                image: social,
+                link: ""
+            },
+        ]
 
         return (
             <div className="section2 row justify-content-center" id="makeup" >
-                <Link to="/makeupArtistic" className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${artistic})` }}>
-                    <p>ARTISTICO</p>
-                    <hr />
-                </Link>
-                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${quinciañeras})` }}>
-                    <p>Quinciañeras</p>
-                    <hr />
-                </div>
-                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${img1})` }}>
-                    <p>CONOCE TUS BROCHAS</p>
-                    <hr />
-                </div>
-                <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${img1})` }}>
-                    <p>CONOCE TUS BROCHAS</p>
-                    <hr />
-                </div>
-                {/* <div className="row justify-content-center">
-                    <button className="btnCard col-1">Everything</button>
-                </div> */}
+                {subTopics.map((item, index) => {
+                    return (
+                        <Link to={item.link} className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${item.image})` }} key={index}>
+                            <p>{item.title}</p>
+                            <hr />
+                        </Link>
+                    )
+                })}
             </div>
         );
     }
@@ -111,13 +137,21 @@ const Home = () => {
         <>
             <Header />
             <div style={{ display: "flex" }}>
-                <div className="home" style={{ zIndex: "1" }}> 
+                <div className="home" style={{ zIndex: "1" }}>
+                    <div className='col-12'>
+                        <div className="row justify-content-center title"> MAREZ</div>
+                        <div className="row justify-content-center sub-title">
+                            <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
+                            <div className="col-12 col-sm-5 col-md-4 col-lg-3">
+                                MAKE UP - NAILS - HAIR
+                            </div>
+                            <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
+                        </div>
+                    </div>
                     {section1()}
                     {section2()}
                     {portada()}
-
                     {section4()}
-                    {/* <Carousel/> */}
                 </div>
             </div>
             <Footer />

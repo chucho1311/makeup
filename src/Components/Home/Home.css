@@ -3,6 +3,24 @@
     text-align: center;
 }
 
+.title {
+    color: black;
+    /*rgb(247, 197, 205)*/
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  .sub-title {
+    color: black;
+    /*rgb(247, 197, 205)*/
+    font-weight: 300;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
 .portada {
     display: flex;
     align-items: center;

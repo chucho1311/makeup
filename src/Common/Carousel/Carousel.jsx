@@ -4,36 +4,41 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 import './Carousel.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function Carousel({slide1,slide2,slide3}) {
+export default function Carousel({ slides }) {
   return (
-    <>
+    < div className=''>
       <Swiper
-        slidesPerView={5}
-        spaceBetween={0}
-        pagination={{
-          clickable: true,
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
-        modules={[Pagination]}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={slide1} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide2} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide3} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide1} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide2} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide3} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide1} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide2} alt='slide'/></SwiperSlide>
-        <SwiperSlide><img src={slide3} alt='slide'/></SwiperSlide>
-
+        {slides.map((slide, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img src={`${slide.image}`} />
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
-    </>
+    </div>
   );
 }
