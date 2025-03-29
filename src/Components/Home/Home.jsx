@@ -55,9 +55,9 @@ const Home = () => {
             <div className="section1 row justify-content-center">
                 {topics.map((item, index) => {
                     return (
-                        <a href={item.href} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent " style={{ backgroundImage: `url(${item.image})` }} key={index}>
+                        <Link to={item.href} className="col-10 col-sm-5 col-md-4 col-lg-3 cardContent " style={{ backgroundImage: `url(${item.image})` }} key={index}>
                             <button className="btnCard ">{item.title}</button>
-                        </a>
+                        </Link>
                     )
                 })}
             </div>

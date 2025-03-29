@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './Components/Home/Home.jsx';
-import Artistic from "./Components/Makeup/Makeup.jsx";
+import Makeup from "./Components/Makeup/Makeup.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/makeup",
-    element: <Artistic />,
+    element: <Makeup />,
   },
 ]);
 
