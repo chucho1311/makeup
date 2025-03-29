@@ -1,0 +1,76 @@
+
+.topicTitle {
+    display: flex;
+    place-content: center;
+    text-align: center;
+    padding: 3%;
+    gap: 20px 0px;
+
+    color: white;
+    background-color: rgb(216, 118, 118);
+    background-size: contain;
+}
+
+/* .artistic img {
+    margin: 3%;
+    padding: 0;
+    box-shadow: 10px 5px 80px rgb(102, 38, 74);
+} */
+
+.topics {
+    display: flex;
+    margin: 0px;
+    padding: 50px 0px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+
+}
+
+.topicCard {
+
+    height: 40vh;
+    /* width: 28vw; */
+    align-content: end;
+    margin: 20px;
+    padding: 20px;
+    font-weight: 800px;
+    font-size: 25px;
+
+    color: rgb(255, 255, 255);
+    /* background-image: ; */
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease;
+}
+
+.topicCard:hover {
+    height: 42vh;
+    width: 35vw;
+}
+
+@media (width <=768px) {
+
+    .topicCard:hover {
+        height: 50vh;
+        width: 80vw;
+    }
+}
+
+.artistCard {
+    display: flex;
+    justify-items: center;
+    color: black;
+    background-color: white;
+}
+
+.cardText {
+    margin: 1.5%;
+    text-align: left;
+}
+
+.artistCard img {
+    /* position: relative; */
+    height: 40vh;
+    margin: 0px;
+    border-radius: 50px;
+}

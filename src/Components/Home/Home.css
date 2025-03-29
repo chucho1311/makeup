@@ -3,23 +3,21 @@
     text-align: center;
 }
 
-.title {
+/* .title {
     color: black;
-    /*rgb(247, 197, 205)*/
-    font-weight: 800;
+    rgb(247, 197, 205) font-weight: 800;
     font-size: 50px;
     margin: 0;
-  }
-  
-  .sub-title {
+}
+
+.sub-title {
     color: black;
-    /*rgb(247, 197, 205)*/
-    font-weight: 300;
+    rgb(247, 197, 205) font-weight: 300;
     font-size: 20px;
     align-items: center;
     text-align: center;
     margin: 0;
-  }
+} */
 
 .portada {
     display: flex;
@@ -41,13 +39,6 @@
 .section1 {
     display: flex;
     margin: 5% 0px 100px 0px;
-}
-
-.section2 {
-    display: flex;
-    margin: 0px;
-    padding: 50px 0px;
-    background-color: rgb(241, 241, 241);
 }
 
 .section3 {
@@ -87,37 +78,10 @@
     color: rgb(167, 11, 167);
 }
 
-.topicCard {
-
-    height: 40vh;
-    /* width: 28vw; */
-    align-content: end;
-    margin: 20px;
-    padding: 20px;
-    font-weight: 800px;
-    font-size: 25px;
-
-    color: rgb(255, 255, 255);
-    /* background-image: ; */
-    background-size: cover;
-    background-position: center;
-    transition: 0.3s ease;
-}
-
-.topicCard:hover {
-    height: 42vh;
-    width: 35vw;
-}
-
 @media (width <=768px) {
     .cardContent {
         max-height: 40vh;
         max-width: 80vw;
-    }
-
-    .topicCard:hover {
-        height: 50vh;
-        width: 80vw;
     }
 }
 

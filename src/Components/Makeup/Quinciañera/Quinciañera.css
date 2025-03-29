@@ -1,0 +1,43 @@
+.container-quinciañera{
+    text-align: center;
+    color: black;
+    padding: 2% 0%;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.gallery{
+    padding: 5%;
+    columns: 500px;
+}
+
+@media (width >1702px) {
+
+    .gallery{
+        columns: 400px;
+    }
+}
+
+@media (width >= 1368px) {
+
+    .gallery{
+        columns: 350px;
+    }
+}
+
+@media (width < 1368px) {
+
+    .gallery{
+        columns: 300px;
+    }
+}
+
+@media (width < 1036px) {
+
+    .gallery{
+        columns: 280px;
+    }
+}

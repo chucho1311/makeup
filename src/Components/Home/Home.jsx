@@ -37,7 +37,7 @@ const Home = () => {
             {
                 title: "Maquillaje",
                 image: mainMKP,
-                "href": "#makeup"
+                "href": "/makeup"
             },
             {
                 title: "Uñas",
@@ -71,7 +71,7 @@ const Home = () => {
             {
                 title: "Artistico",
                 image: artistic,
-                link: "/makeupArtistic"
+                link: ""
             },
             {
                 title: "Quinciañeras",
@@ -138,7 +138,7 @@ const Home = () => {
             <Header />
             <div style={{ display: "flex" }}>
                 <div className="home" style={{ zIndex: "1" }}>
-                    <div className='col-12'>
+                    {/* <div className='col-12'>
                         <div className="row justify-content-center title"> MAREZ</div>
                         <div className="row justify-content-center sub-title">
                             <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
@@ -147,9 +147,8 @@ const Home = () => {
                             </div>
                             <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
                         </div>
-                    </div>
+                    </div> */}
                     {section1()}
-                    {section2()}
                     {portada()}
                     {section4()}
                 </div>

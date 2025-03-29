@@ -30,7 +30,7 @@ const Header = () => {
                     <img className='imgIcon' src='https://img.icons8.com/?size=100&id=BFGcUuGkjgWI&format=png&color=1A1A1A' alt='whatsapp' />
                 </Link>
             </nav> */}
-            {/* <div className='col-12'>
+            <div className='col-12'>
                 <div className="row justify-content-center title"> MAREZ</div>
                 <div className="row justify-content-center sub-title">
                     <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
                     <hr className="col-10 col-sm-3 col-md-3 col-lg-3" style={{ border: "1px solid", margin: "0", color: "black" }} />
                 </div>
-            </div> */}
+            </div>
         </header>
     )
 }
