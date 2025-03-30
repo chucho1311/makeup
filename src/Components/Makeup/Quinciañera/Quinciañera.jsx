@@ -12,7 +12,7 @@ const Quinciañera = () => {
 
     return (
         <div className="container-quinciañera row ">
-            <h1 className="col-12">Quinciañera</h1>
+            <h1 className="quinciañeraTitle col-12">Quinciañera</h1>
             <div className="gallery">
                 <img src={img5} alt="1" />
                 <img src={img2} alt="2" />

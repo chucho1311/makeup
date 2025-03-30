@@ -1,59 +1,76 @@
-.artistic-container{
-    text-align: center;
-    background-color: #fadbbd;
-    color: black;
-    padding: 30px 0;
-}
-
-.card {
-    position: relative;
-    height: 400px;
-    padding: 0;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-.card .cardImg {
-    height: 100%;
-    width: 100%;
-    background: #288ca0;
-    transform: perspective(500px)  rotateY(0deg);
-    border-radius: 10px;
-}
-
-.card div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.artisticGallery {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    transition: 1.5s;
+    background-color: rgb(250, 225, 219);
+    padding: 3%;
+    gap: 2%;
 }
 
-.card .front {
-    /* background: #288ca0; */
-    transform: perspective(500px) rotateY(0deg);
+.artisticTitle {
+    place-content: center;
+    font-size: 60px;
+    color: black;
 }
 
-.card .back {
-    background: rgb(70, 25, 25);
-    transform: perspective(500px) rotateY(180deg);
+.description {
+    margin-top: 8%;
+    text-align: left;
+    color: black;
+    font-size: 30px;
 }
 
-.card:hover .front {
-    transform: perspective(500px) rotateY(180deg);
+@media (width < 1368px) {
+
+    .description {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
-.card:hover .back {
-    transform: perspective(500px) rotateY(360deg);
+@media (width <= 990px) {
+
+    .description {
+        font-size: 23px;
+        text-align: center;
+    }
 }
 
-.card div p {
-    /* font-size: 30px; */
-    color: #f1f1f1;
+@media (width <= 766px) {
+
+    .description {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.box {
+    height: 60vh;
+    background-image: url("../../../Common/Images/artistic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: change-image infinite 6s linear;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes change-image {
+
+    0% {
+        background-image: url("../../../Common/Images/artistic1.jpg");
+    }
+
+    25% {
+        background-image: url("../../../Common/Images/artistic2.jpg");
+    }
+
+    50% {
+        background-image: url("../../../Common/Images/artistic3.jpg");
+    }
+
+    75% {
+        background-image: url("../../../Common/Images/artistic4.jpg");
+    }
 }

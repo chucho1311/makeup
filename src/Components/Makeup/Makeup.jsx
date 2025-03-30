@@ -23,26 +23,26 @@ const Makeup = () => {
 
     scroll(top)
     // Slides Images
-    const slides = [
-        {
-            "image": artistic1
-        },
-        {
-            "image": artistic2
-        },
-        {
-            "image": artistic3
-        },
-        {
-            "image": artistic4
-        },
-        {
-            "image": mainImg
-        },
-        {
-            "image": quinciañera
-        },
-    ]
+    // const slides = [
+    //     {
+    //         "image": artistic1
+    //     },
+    //     {
+    //         "image": artistic2
+    //     },
+    //     {
+    //         "image": artistic3
+    //     },
+    //     {
+    //         "image": artistic4
+    //     },
+    //     {
+    //         "image": mainImg
+    //     },
+    //     {
+    //         "image": quinciañera
+    //     },
+    // ]
 
     const topics = () => {
 
@@ -88,11 +88,11 @@ const Makeup = () => {
         <>
             <Header />
 
-            <h2 className="topicTitle row">Make Up</h2>
+            <h1 className="topicTitle row">Make Up</h1>
             {topics()}
             <Artistic/>
             <Quinciañera/>
-            <Carousel slides={slides} />
+            {/* <Carousel slides={slides} /> */}
             <Footer />
         </>
     )
