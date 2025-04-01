@@ -1,0 +1,29 @@
+.noviasContainer {
+    background: rgb(250, 225, 219);
+    padding: 5% 15%;
+    animation: change-background infinite 5s linear;
+}
+
+@keyframes change-background {
+    0% {
+        background: rgb(250, 225, 219);
+    }
+
+    50% {
+        background: rgb(219, 219, 250);
+    }
+}
+
+.noviaTitle {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    font-size: 60px;
+    height: 100px;
+    margin: 1%;
+    color: black;
+}
+
+/* .imgNovia {
+    height: 50vh;
+} */

@@ -18,6 +18,8 @@ import artistic4 from "../../Common/Images/artistic4.jpg"
 import Carousel from "../../Common/Carousel/Carousel";
 import Artistic from "./Artistic/Artistic";
 import Quinciañera from "./Quinciañera/Quinciañera";
+import Novias from "./Novias/Novias";
+import Social from "./Social/Social";
 
 const Makeup = () => {
 
@@ -92,6 +94,8 @@ const Makeup = () => {
             {topics()}
             <Artistic/>
             <Quinciañera/>
+            <Novias/>
+            <Social/>
             {/* <Carousel slides={slides} /> */}
             <Footer />
         </>
