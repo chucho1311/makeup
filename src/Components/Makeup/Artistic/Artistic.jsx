@@ -9,7 +9,7 @@ import img4 from "../../../Common/Images/carousel1.jpg";
 const Artistic = () => {
 
     return (
-        <div className="artisticGallery row justify-content-center">
+        <div id="artistico" className="artisticGallery row justify-content-center">
             <div className=" col-sm-12 col-md-6 col-lg-6 col-xl-7">
                 <h2 className="row artisticTitle">Artistico</h2>
                 <p className="description row">

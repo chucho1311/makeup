@@ -53,21 +53,25 @@ const Makeup = () => {
             {
                 title: "Artistico",
                 image: artistic,
+                section: "#artistico",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             },
             {
                 title: "Quinciañeras",
                 image: quinciañeras,
+                section: "#quinciañeras",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             },
             {
                 title: "Novias",
                 image: novia,
+                section: "#novias",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             },
             {
                 title: "Social",
                 image: social,
+                section: "#social",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             },
         ]
@@ -76,10 +80,10 @@ const Makeup = () => {
             <div className="topics row justify-content-center" >
                 {subTopics.map((item, index) => {
                     return (
-                        <div className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${item.image})` }} key={index}>
+                        <a href={item.section} className="col-9 col-sm-8 col-md-4 topicCard" style={{ backgroundImage: `url(${item.image})` }} key={index}>
                             <p>{item.title}</p>
                             <hr />
-                        </div>
+                        </a>
                     )
                 })}
             </div>

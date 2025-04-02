@@ -9,7 +9,7 @@ import "./Social.css";
 const Social = () => {
 
     return (
-        <div className="socialContainer row ">
+        <div className="socialContainer row " id="social">
             <div className=" col-lg-12 col-xl-3">
                 <div className="row justify-content-center" style={{ height: "100%" }}>
                     <div className="imgSocial1 col-5 col-xl-10"></div>

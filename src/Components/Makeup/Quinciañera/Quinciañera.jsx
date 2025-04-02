@@ -11,7 +11,7 @@ import img6 from "../../../Common/Images/quinciañera3.jpg";
 const Quinciañera = () => {
 
     return (
-        <div className="container-quinciañera row justify-content-center">
+        <div id="quinciañeras" className="container-quinciañera row justify-content-center">
             <h1 className="quinciañeraTitle col-11">Quinciañera</h1>
             <div className="gallery">
                 <img src={img5} alt="1" />
